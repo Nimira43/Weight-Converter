@@ -1,17 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    outline: none;
-}
-
 body {
     width: 100%;
     height: 100vh;
+    margin: 0;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(
         rgba(0, 0, 0, 0.9),
@@ -19,7 +12,44 @@ body {
         url('./carlos-irineu-da-costa-nHU0brQt-Bo-unsplash.jpg') no-repeat center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: beige;
+}
+
+.container {
+    background: darkblue;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.318);
+    border-radius: 8px;
+    width: 85%;
+    max-width: 450px;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 400;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.input {
+    padding: 10px;
+    width: 70%;
+    background: beige;
+    color: darkblue;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;   
+}
+
+.error {
+    color: red;
 }
