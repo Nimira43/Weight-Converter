@@ -8,7 +8,15 @@
     <title>Weight Converter</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <h1 class="heading">Weight Converter</h1>
+        <div class="input-container">
+            <label for="pounds">Pounds: </label>
+            <input type="number" class="input" id="input" step="0.1" placeholder="Enter weight">
+        </div>
+        <p>The weight in kilos is: <span id="result"></span></p>
+        <p class="error" id="error"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
